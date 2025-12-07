@@ -67,7 +67,7 @@ function exibirTabela(data) {
         resultadoDiv = document.createElement("section");
         resultadoDiv.classList.add("container");
         resultadoDiv.id = "resultado";
-        document.querySelector("body").appendChild(resultadoDiv);
+        document.querySelector("footer").parentElement.insertBefore(resultadoDiv, document.querySelector("footer"));
     }
     resultadoDiv.innerHTML = tabela;
 }

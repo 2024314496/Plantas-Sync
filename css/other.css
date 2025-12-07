@@ -1,0 +1,247 @@
+/* Feriados Section Styles */
+.feriados-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#feriados-result {
+    width: 100%;
+}
+
+/* Bancos Section Styles */
+.bancos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#bancos-result {
+    width: 100%;
+}
+
+/* Moedas Section Styles */
+.moedas-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#moedas-result {
+    width: 100%;
+}
+.feriados-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+.feriados-table thead {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.feriados-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.feriados-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+}
+
+.feriados-table tbody tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.2s;
+}
+
+.feriados-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tipo-badge {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Bancos Cards Styles */
+.bancos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    animation: slideIn 0.5s ease-out;
+}
+
+.banco-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.banco-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.banco-code {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.banco-nome {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.banco-fullname {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.banco-ispb {
+    font-size: 0.85rem;
+    color: #999;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+/* Moedas Table Styles */
+.moedas-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+.moedas-table thead {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.moedas-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.moedas-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+}
+
+.moedas-table tbody tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.2s;
+}
+
+.moedas-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.moeda-simbolo {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.tipo-moeda-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background-color: #e8f5e9;
+    color: var(--primary-color);
+}
+
+@media (width < 768px) {
+    .feriados-section {
+        padding: 30px 15px;
+    }
+
+    .joke-card {
+        padding: 20px;
+    }
+
+    .joke-setup {
+        font-size: 1rem;
+    }
+
+    .joke-punchline {
+        font-size: 1.1rem;
+    }
+
+    .feriados-table th,
+    .feriados-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .moedas-table th,
+    .moedas-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .bancos-container {
+        grid-template-columns: 1fr;
+    }
+}

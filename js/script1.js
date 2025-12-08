@@ -1,5 +1,3 @@
-// https://brasilapi.com.br/api/fipe/preco/v1/{codigoFipe}
-
 function FIPE(event, element){
     event.preventDefault();
     let value = document.querySelector(element).value.trim();

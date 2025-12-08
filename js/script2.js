@@ -51,7 +51,8 @@ function exibirFeriados(data) {
     document.getElementById("feriados-result").innerHTML = tabela;
 }
 
-// https://brasilapi.com.br/api/banks/v1
+
+
 
 function carregarBancos() {
     fetch(`https://brasilapi.com.br/api/banks/v1`, { method: "GET" })
@@ -102,7 +103,9 @@ function exibirBancos(data) {
     document.getElementById("bancos-result").innerHTML = cards;
 }
 
-// https://brasilapi.com.br/api/cambio/v1/moedas
+
+
+
 
 function carregarMoedas() {
     fetch(`https://brasilapi.com.br/api/cambio/v1/moedas`, { method: "GET" })
@@ -116,6 +119,8 @@ function carregarMoedas() {
             document.getElementById("moedas-result").innerHTML = "<p>Erro ao buscar moedas.</p>";
         });
 }
+
+carregarMoedas();
 
 function exibirMoedas(data) {
     if (!data || data.length === 0) {
@@ -152,6 +157,3 @@ function exibirMoedas(data) {
 
     document.getElementById("moedas-result").innerHTML = tabela;
 }
-
-// Carregar moedas ao abrir a página
-window.addEventListener('load', carregarMoedas);

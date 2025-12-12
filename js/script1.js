@@ -1,17 +1,24 @@
-function FIPE(event, element){
+function FIPE(event, element) {
     event.preventDefault();
     let value = document.querySelector(element).value.trim();
 
-    fetch(`https://brasilapi.com.br/api/fipe/preco/v1/${value}`, {method: "GET"})
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        exibirTabela(data[0]);
-    })
-    .catch(error => {
-        console.error(error);
-        alert("Erro ao buscar dados. Verifique o código FIPE digitado.");
-    });
+    fetch(`https://brasilapi.com.br/api/fipe/preco/v1/${value}`, { method: "GET" })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            exibirTabela(data[0]);
+        })
+        .catch(error => {
+            let resultadoDiv = document.getElementById("resultado");
+            if (!resultadoDiv) {
+                resultadoDiv = document.createElement("section");
+                resultadoDiv.classList.add("container");
+                resultadoDiv.id = "resultado";
+                document.querySelector("footer").parentElement.insertBefore(resultadoDiv, document.querySelector("footer"));
+            }
+            resultadoDiv.innerHTML = "Dados Inválidos"
+            
+        });
 }
 
 function exibirTabela(data) {

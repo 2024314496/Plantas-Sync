@@ -4,11 +4,11 @@ function carregarFeriados() {
     fetch(`https://brasilapi.com.br/api/feriados/v1/${new Date().getFullYear()}`, { method: "GET" })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             exibirFeriados(data);
         })
         .catch(error => {
-            console.error(error);
+            // console.error(error);
             document.getElementById("feriados-result").innerHTML = "<p>Erro ao buscar feriados.</p>";
         });
 }
@@ -58,7 +58,7 @@ function carregarBancos() {
     fetch(`https://brasilapi.com.br/api/banks/v1`, { method: "GET" })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             exibirBancos(data);
         })
         .catch(error => {
@@ -111,11 +111,11 @@ function carregarMoedas() {
     fetch(`https://brasilapi.com.br/api/cambio/v1/moedas`, { method: "GET" })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             exibirMoedas(data);
         })
         .catch(error => {
-            console.error(error);
+            // console.error(error);
             document.getElementById("moedas-result").innerHTML = "<p>Erro ao buscar moedas.</p>";
         });
 }

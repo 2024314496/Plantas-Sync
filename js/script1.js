@@ -5,7 +5,7 @@ function FIPE(event, element) {
     fetch(`https://brasilapi.com.br/api/fipe/preco/v1/${value}`, { method: "GET" })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             exibirTabela(data[0]);
         })
         .catch(error => {
@@ -16,7 +16,7 @@ function FIPE(event, element) {
                 resultadoDiv.id = "resultado";
                 document.querySelector("footer").parentElement.insertBefore(resultadoDiv, document.querySelector("footer"));
             }
-            resultadoDiv.innerHTML = "Dados Inválidos"
+            resultadoDiv.innerHTML = "FIPE inserida no campo inválida."
             
         });
 }

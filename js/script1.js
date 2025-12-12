@@ -16,7 +16,7 @@ function FIPE(event, element) {
                 resultadoDiv.id = "resultado";
                 document.querySelector("footer").parentElement.insertBefore(resultadoDiv, document.querySelector("footer"));
             }
-            resultadoDiv.innerHTML = "FIPE inserida no campo inválida."
+            resultadoDiv.innerHTML = "FIPE inserida no campo inválida ou erro ao puxar dados."
             
         });
 }
